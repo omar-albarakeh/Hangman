@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let answer = document.getElementById("answer-section");
   let letter = document.querySelectorAll(".letter");
 
-  let word = "OMAR";
+  let words = ["APPLE", "HOUSE", "BUS", "CAR", "WAR"];
+  let word = words[Math.floor(Math.random() * words.length)];
   let gussedletter = [];
   let imgs = [
     { src: "./assets/head.svg", className: "head" },
